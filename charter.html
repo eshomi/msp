@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Командование - Устав ВС СССР</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .command-structure {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .command-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .command-screenshot {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 12px;
+            border: 3px solid #8B0000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin: 0 auto 40px;
+            display: block;
+        }
+        
+        .command-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .command-table thead {
+            background: linear-gradient(135deg, #8B0000 0%, #B22222 100%);
+        }
+        
+        .command-table th {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid #FFD700;
+        }
+        
+        .command-table tbody tr {
+            transition: all 0.3s ease;
+            border-bottom: 1px solid #2c3e50;
+        }
+        
+        .command-table tbody tr:hover {
+            background: rgba(139, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .command-table td {
+            padding: 18px 20px;
+            color: #ecf0f1;
+            font-size: 16px;
+            line-height: 1.5;
+            vertical-align: top;
+        }
+        
+        .command-table td:first-child {
+            font-weight: bold;
+            color: #FFD700;
+            width: 35%;
+            border-right: 2px solid #34495e;
+        }
+        
+        .command-table td:last-child {
+            width: 65%;
+        }
+        
+        .division-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+            font-size: 18px !important;
+            color: #FFD700 !important;
+            text-align: left !important;
+            padding: 15px 20px !important;
+        }
+        
+        .rank {
+            color: #1abc9c;
+            font-weight: bold;
+        }
+        
+        .name {
+            color: #ecf0f1;
+            font-weight: bold;
+        }
+        
+        .callsign {
+            color: #e74c3c;
+            font-style: italic;
+        }
+        
+        .vacant {
+            color: #95a5a6;
+            font-style: italic;
+        }
+        
+        .separator {
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #FFD700 50%, transparent 100%);
+            margin: 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .command-table {
+                font-size: 14px;
+            }
+            
+            .command-table th,
+            .command-table td {
+                padding: 12px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="charter-content">
+            <div class="charter-hero">
+                <div class="hero-image" style="background: url(https://media.discordapp.net/attachments/1310399674078859458/1413190823163465758/Garrysmod_Screenshot_2025.08.30_-_13.10.27.59.png?ex=6908d084&is=69077f04&hm=9007c3426761abf164694c50a7c81a07bd12ccc17b08d6b454a49eebbcadb0cb&=&format=webp&quality=lossless&width=1423&height=800) center/cover no-repeat;"></div>
+                <h1 class="hero-title">СТРУКТУРА КОМАНДОВАНИЯ</h1>
+                <div class="hero-divider"></div>
+            </div>
+            
+            <div class="command-structure">
+                <img src="https://cdn.discordapp.com/attachments/1321013908689125396/1432384411596226733/2a1c0cb2989ca8c7.png?ex=6908c470&is=690772f0&hm=0a54698902814ace703cdb71f38197741ef29e3ed5a742dd95f445d38bbfa12d&" 
+                     alt="Штаб Дивизии" 
+                     class="command-screenshot">
+                
+                <table class="command-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Штаб Дивизии</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Командир штаба 1-й ССД</td>
+                            <td>
+                                <span class="rank">КД-1 | М-р</span> 
+                                <span class="name">Белов А.А.</span> 
+                                <span class="callsign">"Сатана"</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Начальник штаба 1-й ССД</td>
+                            <td>
+                                <span class="rank">НШД-1 | М-р</span> 
+                                <span class="name">Смирнов А.С.</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2" class="division-header">Командование полка</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Командир 102-го гв.МСП</td>
+                            <td>
+                                <span class="rank">КМД МСП | гв.П/П-к</span> 
+                                <span class="name">Девятков С.С.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Заместитель Командира 102-го гв.МСП</td>
+                            <td>
+                                <span class="rank">ЗК МСП | гв.К-н</span> 
+                                <span class="name">Штирлиц М.О.</span><br>
+                                <div class="separator"></div>
+                                <span class="rank">ЗК МСП | гв.М-р</span> 
+                                <span class="name">Вистов М.А.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Заместитель Командира по Военно-Политической Работе 102-го гв.МСП</td>
+                            <td>
+                                <span class="vacant">Вакантно</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2" class="division-header">Командование Боевой Роты</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Командир Боевой Роты</td>
+                            <td>
+                                <span class="rank">КБР | гв.Ст.Пр-к</span> 
+                                <span class="name">Соколов Н.В.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Старшина Боевой Роты</td>
+                            <td>
+                                <span class="rank">СБР | гв.Пр-к</span> 
+                                <span class="name">Косяк П.А.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Командир Боевого Взвода</td>
+                            <td>
+                                <span class="rank">гв.Л-т</span> 
+                                <span class="name">Окрошкин Я.Е.</span> 
+                                <span class="callsign">(ОТПУСК)</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2" class="division-header">Командование Учебно-Медицинской Роты</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Командир Учебно-Медицинской Роты</td>
+                            <td>
+                                <span class="rank">КУМР | гв.Ст.Пр-к</span> 
+                                <span class="name">Кравцов А.К.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Старшина Учебно-Медицинской Роты</td>
+                            <td>
+                                <span class="rank">СУМР | гв.Ст-на</span> 
+                                <span class="name">Шматок Н.Н.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Командир Медицинского Взвода</td>
+                            <td>
+                                <span class="rank">КМВ | гв.Ст-на</span> 
+                                <span class="name">Михайлов К.Д.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Командир Учебного Взвода</td>
+                            <td>
+                                <span class="rank">КУВ | гв.Пр-к</span> 
+                                <span class="name">Ворошилов В.П.</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-border"></div>
+</body>
+</html>
