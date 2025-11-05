@@ -6,6 +6,40 @@
     <title>История подразделения - 102-гвардейский мотострелковый полк</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Добавляем стили для фонового изображения */
+        body {
+            background-image: url('./history.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        /* Улучшаем читаемость контента поверх фона */
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный оверлей для лучшей читаемости */
+            z-index: -1;
+        }
+        
+        /* Остальные стили для улучшения внешнего вида */
+        .nav-header, .page-footer {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .main-content {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 5px;
+        }
+
         .history-content {
             max-width: 1000px;
             margin: 0 auto;
@@ -121,6 +155,19 @@
             font-size: 14px;
         }
         
+        .page-title-overlay {
+            background-color: rgba(139, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .page-title {
+            color: white;
+            margin: 0;
+            font-size: 32px;
+        }
+        
         @media (max-width: 768px) {
             .history-content {
                 padding: 10px;
@@ -132,6 +179,10 @@
             
             .history-title {
                 font-size: 24px;
+            }
+            
+            .main-content {
+                margin: 10px;
             }
         }
     </style>
