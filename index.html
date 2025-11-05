@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт 102-го гвардейского мотострелкового полка</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Добавляем стили для фонового изображения */
+        body {
+            background-image: url('./main.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        /* Улучшаем читаемость контента поверх фона */
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный оверлей для лучшей читаемости */
+            z-index: -1;
+        }
+        
+        /* Остальные стили для улучшения внешнего вида */
+        .nav-header, .page-footer {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        main {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="background-overlay"></div>
