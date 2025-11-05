@@ -306,7 +306,24 @@ body:has(.charter-layout) {
     gap: 15px;
     border-top: 2px solid red;
     z-index: 1000;
+    justify-content: space-between; 
 }
+    
+    .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+    
+    .footer-right {
+        max-width: 450px;
+        font-size: 11px;
+        opacity: .6;
+        text-align: right;
+        color: white;
+        font-weight: bold;
+}
+    
 
 .footer-icon {
     font-size: 20px;
@@ -665,38 +682,50 @@ body {
     pointer-events: none;
 }
 
-.centered-video-section {
+.video-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 40px;
     margin: 40px auto;
     max-width: 1200px;
     padding: 0 20px;
-    text-align: center;
+    flex-wrap: wrap;
 }
 
-.video-wrapper {
-    margin-bottom: 20px;
+.video-container {
+    flex: 0 0 auto;
 }
 
-.video-title h2 {
+.video-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.video-text h2 {
     font-size: 2.5rem;
     color: #ffffff;
+    text-align: left;
     margin: 0;
     font-weight: bold;
 }
 
-/* Адаптивность */
+/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
-    .video-title h2 {
+    .video-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .video-text h2 {
+        text-align: center;
         font-size: 2rem;
     }
     
-    .video-wrapper iframe {
+    .video-container iframe {
         width: 100%;
         height: auto;
         aspect-ratio: 16/9;
     }
 }
-
